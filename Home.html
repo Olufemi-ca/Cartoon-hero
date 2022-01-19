@@ -3,36 +3,68 @@
     <head>
         <title>Avatar Aang</title>
        <link rel="stylesheet" type="text/css" href="css/cartoon.css">
-       
+       <link rel="icon" href="image/favicon (2).ico">
+    </head>
     </head>
     <body>
        <!--header element-->
        <header>
            <img src="image/aang.jfif">
            <h1> Avatar Aang </h1> 
-           <h2> The last air bender</h2>
+           <h4> The last air bender</h4>
        </header>
        <!-- header element done-->
        <!-- main element  -->
+    
        <main>
-           <h2>About Avatar Aang</h2>
-           <p>  <img src="image/Aang2.png" style="float:left;">Aang was a male Air Nomad born in 12 BG and the Avatar during the Hundred Year War, succeeding Avatar Roku and preceding Avatar Korra. As the Avatar of his time, he was the only person capable of using all four element bending arts: airbending, waterbending, earthbending, and firebending. He was also one of a select few Avatars and one of the first in many cycles[8] to learn the ancient art of energybending and the first Avatar known to have actively used the technique.
+           <h1>About Avatar Aang</h1>
+           <p>  <img src="image/Aang2.png" style="float:left;">   Aang was a male Air Nomad born in 12 BG and the Avatar during the Hundred Year War, succeeding Avatar Roku and preceding Avatar Korra. As the Avatar of his time, he was the only person capable of using all four element bending arts: airbending, waterbending, earthbending, and firebending. He was also one of a select few Avatars and one of the first in many cycles[8] to learn the ancient art of energybending and the first Avatar known to have actively used the technique.
             <br> Shortly before the beginning of the Hundred Year War, Aang was frozen in an iceberg for a hundred years; he later emerged, still biologically twelve years old, into a world engulfed by war.[3] During his absence, the Fire Nation had waged war upon the other nations and managed to completely wipe out the pacifistic Air Nomads. It fell to Aang, the Avatar and the last airbender, to end the War by mastering the other three elements and defeating Fire Lord Ozai. He remained a kind and goofy kid at heart throughout his year-long struggle, despite the overwhelming loss of his people and the heavy burdens he was forced to bear. After his victory over the Phoenix King, Aang began a romantic relationship with his close friend, Katara.[9] The couple eventually married and raised a family of three children: Bumi, the oldest, a nonbender who became an airbender later in life; Kya, a waterbender; and the youngest, Tenzin, an airbender.</p>
            
             <br> <br> <p>Avatar Aang and the Team 
                 <ul>
                     <li>Aang </li>
-                    <li>Katara</li>
-                    <li>Sokka</li>
-                    <li>Appa</li>
-                    <li>Momo</li>
-                    <li>Toph</li>
-                    <li>Zuko </li>
-                    <li>Suki</li>
+                    <li><a  href="https://avatar.fandom.com/wiki/Katara">Katara</a></li> 
+                    <li><a href="https://avatar.fandom.com/wiki/Sokka">Sokka</a></li>
+                    <li> <a href="https://avatar.fandom.com/wiki/Appa">Appa</a></li>
+                    <li><a href="https://avatar.fandom.com/wiki/Momo">Momo</a></li>
+                    <li> <a href="https://avatar.fandom.com/wiki/Toph_Beifong">Toph</a></li>
+                    <li> <a href="https://avatar.fandom.com/wiki/Zuko">Zuko </a></li>
+                    <li> <a href="https://avatar.fandom.com/wiki/Suki">Suki</a></li>
                 </ol>
             </p>
+         <!--Geolocation API Testing -->
+                    <p>Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+
+            <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+
+            function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+            }
+            </script>
+
+        <!--API testing end here-->
 
        </main>
+
+       <!-- Footer element -->
+       <footer>
+           <p>This site was created during a Tap Tap Kaboom Class &copy;Olufemi Chris </p>
+       </footer>
 
     </body>
 </html>
